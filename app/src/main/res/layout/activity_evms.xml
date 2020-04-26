@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EVMS">
+
+    <TextView
+        android:id="@+id/vms"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:fontFamily="@font/droid_sans"
+        android:gravity="center"
+        android:text="Vistor Management System"
+        android:textColor="#1A237E"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/vms"
+        android:layout_marginTop="15dp"
+        android:text="Whom Do Tou Like To Meet?"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+    <Spinner
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:id="@+id/select"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/vms"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:dropDownWidth="match_parent"
+        android:background="@drawable/button"/>
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70sp"
+        android:layout_marginBottom="190sp"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:onClick="previous"
+        android:text="Previous"
+        android:fontFamily="@font/playfair_display"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25sp"
+
+
+        />
+
+    <Button
+        android:onClick="next"
+        android:id="@+id/next"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:layout_marginStart="19sp"
+        android:text="Next"
+        android:fontFamily="@font/playfair_display"
+        android:layout_toEndOf="@id/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="190sp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25sp"
+
+
+        />
+    <Button
+
+        android:id="@+id/cancel"
+        android:layout_width="270sp"
+        android:layout_height="50sp"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:fontFamily="@font/playfair_display"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:layout_above="@id/menu"
+        android:layout_marginBottom="25sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/menu"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="0.0"
+            >
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@mipmap/home"
+                android:layout_weight=".1"
+                android:layout_gravity="left"
+                />
+            <Button android:id="@+id/alerts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@mipmap/alerts"
+                android:layout_weight=".1"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/events"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/eventss"
+                android:layout_weight=".1"
+                android:layout_gravity="right"/>
+            <Button
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/help"
+                android:layout_weight=".1"
+                android:layout_gravity="end"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/vmslogo_1" />
+
+</RelativeLayout>

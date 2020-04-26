@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:fontFamily="@font/droid_sans"
+        android:gravity="center"
+        android:text="Visitor Details"
+        android:inputType="textPersonName"
+        android:textColor="#1A237E"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="TextViewEdits" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_height="40sp"
+        android:layout_width="300sp"
+        android:background="@drawable/button"
+        android:layout_below="@id/details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:hint="Name"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="15sp"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_height="40sp"
+        android:layout_width="300sp"
+        android:fontFamily="@font/montserrat"
+        android:background="@drawable/button"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:paddingStart="15sp"/>
+    <EditText
+        android:id="@+id/company"
+        android:layout_height="40sp"
+        android:layout_width="300sp"
+        android:background="@drawable/button"
+        android:layout_below="@id/number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Company"
+        android:paddingLeft="15sp"/>
+    <EditText
+        android:id="@+id/Email"
+        android:layout_height="40sp"
+        android:layout_width="300sp"
+        android:background="@drawable/button"
+        android:layout_below="@id/company"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:hint="Email"
+        android:fontFamily="@font/montserrat"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15sp"/>
+    <EditText
+        android:id="@+id/purpose"
+        android:layout_height="70sp"
+        android:layout_width="300sp"
+        android:background="@drawable/button"
+        android:layout_below="@id/Email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:hint="Purpose of visit"
+        android:paddingStart="15sp"
+        android:fontFamily="@font/montserrat"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/purpose"
+        android:inputType="date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:hint="Date"
+        android:fontFamily="@font/montserrat"
+        android:paddingRight="240sp"
+        android:background="@drawable/button"
+         />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70sp"
+        android:layout_marginBottom="190sp"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:onClick="previous"
+        android:text="Previous"
+        android:fontFamily="@font/playfair_display"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25sp"
+
+
+        />
+
+    <Button
+        android:onClick="next"
+        android:id="@+id/next"
+        android:layout_width="125sp"
+        android:layout_height="50sp"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:layout_marginStart="19sp"
+        android:text="Next"
+        android:fontFamily="@font/playfair_display"
+        android:layout_toEndOf="@id/previous"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="190sp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25sp"
+
+
+        />
+    <Button
+
+        android:id="@+id/cancel"
+        android:layout_width="270sp"
+        android:layout_height="50sp"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:fontFamily="@font/playfair_display"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:layout_above="@id/menu"
+        android:layout_marginBottom="25sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/menu"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="0.0"
+            >
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@mipmap/home"
+                android:layout_weight=".1"
+                android:layout_gravity="left"
+                />
+            <Button android:id="@+id/alerts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@mipmap/alerts"
+                android:layout_weight=".1"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/events"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/eventss"
+                android:layout_weight=".1"
+                android:layout_gravity="right"/>
+            <Button
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/help"
+                android:layout_weight=".1"
+                android:layout_gravity="end"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/vmslogo_1" />
+</RelativeLayout>

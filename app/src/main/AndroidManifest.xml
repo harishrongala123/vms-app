@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.vms">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Details" />
+        <activity android:name=".EConfrim" />
+        <activity android:name=".ECamera" />
+        <activity android:name=".EVMS" />
+        <activity android:name=".EOthers" />
+        <activity android:name=".ETimeLogs" />
+        <activity android:name=".EProjects" />
+        <activity android:name=".EEvents" />
+        <activity android:name=".EMyVisitors" />
+        <activity android:name=".ETasks" />
+        <activity android:name=".ETraining" />
+        <activity android:name=".EEmployees" />
+        <activity android:name=".EvisitorPass" />
+        <activity android:name=".Confrim" />
+        <activity android:name=".Camera" />
+        <activity android:name=".GTimeLogs" />
+        <activity android:name=".GVisits" />
+        <activity android:name=".AlertsEmp" />
+        <activity android:name=".EventsEmp" />
+        <activity android:name=".HelpEmp" />
+        <activity android:name=".Help" />
+        <activity android:name=".Events" />
+        <activity android:name=".Alert" />
+        <activity android:name=".Employee1" />
+        <activity android:name=".Employee" />
+        <activity android:name=".VMS" />
+        <activity android:name=".Visitor" />
+        <activity android:name=".Guest1" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

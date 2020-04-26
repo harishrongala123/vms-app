@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employee1">
+
+    <Button
+        android:onClick="myvisits"
+        android:id="@+id/myvisitors"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/myvisitors"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        />
+
+    <Button
+        android:onClick="timelogs"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/timelogs"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/myvisitors"
+        />
+    <Button
+        android:onClick="employees"
+        android:id="@+id/employees"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/employees"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@id/myvisitors"
+
+        android:textColor="#FFF"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        android:paddingBottom="10dp"/>
+    <Button
+        android:onClick="tasks"
+        android:id="@+id/tasks"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/tasks"
+        android:layout_toLeftOf="@id/myvisitors"
+        android:layout_marginEnd="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:onClick="Events"
+        android:id="@+id/Events"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/events"
+        android:layout_toRightOf="@id/myvisitors"
+        android:layout_marginStart="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:onClick="visitorpass"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/visitorpass"
+        android:layout_above="@id/tasks"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@id/employees"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="false"
+        android:layout_marginEnd="15dp"
+        android:textColor="#FFF"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        />
+
+    <Button
+        android:onClick="projects"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/projects"
+        android:layout_below="@id/tasks"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/employees"
+        android:layout_marginEnd="15dp"
+        />
+
+    <Button
+        android:id="@+id/others"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tasks"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/employees"
+        android:background="@mipmap/others"
+        />
+
+    <Button
+        android:onClick="training"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/trainning"
+        android:layout_above="@id/tasks"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/employees"
+        android:layout_marginStart="15dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/menu"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="0.0"
+            >
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@mipmap/home"
+                android:layout_weight=".1"
+                android:layout_gravity="left"
+                />
+            <Button android:id="@+id/alerts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:background="@mipmap/alerts"
+                android:layout_weight=".1"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/events"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/eventss"
+                android:layout_weight=".1"
+                android:layout_gravity="right"/>
+            <Button
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/help"
+                android:layout_weight=".1"
+                android:layout_gravity="end"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

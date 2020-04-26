@@ -1,0 +1,16 @@
+<resources>
+    <array name="visitorspinner">
+        <item>
+            visitor
+        </item>
+        <item>
+            contractor
+        </item>
+        <item>
+            marketing
+        </item>
+        <item>
+            courier
+        </item>
+    </array>
+</resources>

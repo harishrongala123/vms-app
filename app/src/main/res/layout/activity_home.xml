@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <Button
+        android:id="@+id/employee"
+        android:onClick="employee"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:text="Employee"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/guest"
+        android:onClick="guest"
+        android:layout_width="290dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_pressed"
+        android:gravity="center"
+        android:text="Guest"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/employee"
+        >
+
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/menu"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="0.0"
+            >
+
+            <Button
+                android:onClick="home"
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/home"
+                android:layout_weight=".1"
+                android:layout_gravity="left"
+                />
+            <Button
+                android:onClick="alert"
+                android:id="@+id/alerts"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/alerts"
+                android:layout_weight=".1"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:onClick="events"
+                android:id="@+id/events"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/eventss"
+                android:layout_weight=".1"
+                android:layout_gravity="right"/>
+            <Button
+                android:onClick="help"
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@mipmap/help"
+                android:layout_weight=".1"
+                android:layout_gravity="end"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/employee"
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/vmslogo_1" />
+
+</RelativeLayout>
